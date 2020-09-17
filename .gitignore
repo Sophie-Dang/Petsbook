@@ -1,0 +1,10 @@
+/vendor
+/wp
+/wp-config.php
+/BDD
+!/content/plugins/*
+/content/themes/*
+!/content/themes/petsbook
+/content/languages
+/content/upgrade
+/content/uploads

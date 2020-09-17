@@ -1,0 +1,150 @@
+//Contact form
+.main-items-contact {
+    margin-top: 9rem;
+    margin-bottom: 5rem;
+    text-align: center;
+    border: 3px solid $color-grey;
+    position: relative; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    &__timbre {
+        position: absolute; 
+        top: 15px;
+        right: 15px;
+        width: 250px;
+        height: auto; 
+        display: none; 
+    }
+    
+}
+.form-contact {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+ 
+}
+.form-contact-fields{
+
+    align-items: center;
+    text-align: end;
+    
+    &__field{
+        margin-top: 1rem;
+        
+    }
+    &__label{
+        font-size: $font-size-default;
+        
+    }
+    &__input{
+        
+        border-style: none;
+        border: 2px solid;
+        border-radius: 0.3rem;
+        border-color: $color-grey;
+        width: 10rem;
+        
+    }
+}
+
+.contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+    &__bloc{
+        display: flex;
+        flex-flow: column;
+        text-align: start;
+        margin-top: 2rem;
+    }
+    &__info{
+        margin-top: 1rem;
+    }
+}
+@media (min-width: $breakpoint-large) {
+    .main-items-contact{
+        flex-direction: row;
+        width: 100%;
+        height: 80vh;
+        &__timbre {
+            display: block; 
+        }
+    }
+    .form-contact{
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-right: 2px solid $color-grey; 
+    }
+    .contact {
+        width: 50%;
+        
+    }
+}
+
+//Connexion
+.connection{
+    margin-top: 1rem;
+    text-align: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.form-connection{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+   
+}
+
+.form-connection__a {
+    text-decoration: none!important;
+    color: black;
+    text-decoration: underline!important;
+    font-size: .8em;
+    
+}
+.form-connection-fields{
+    
+    align-items: center;
+    
+    
+    &__field{
+        display: flex;
+        flex-direction: column;
+        margin-top: 1rem;
+    }
+    &__label{
+        font-size: $font-size-default;
+        margin-top: 0.5rem;
+        
+    }
+    &__input{
+        border: none;
+        border-radius: 0.3rem;
+        background-color: $color-beige;
+        width: 15rem;
+        text-align: center;
+        
+        margin-bottom: 1.5;
+    }
+}
+@media (min-width: $breakpoint-large) {
+    .connection{
+       width: 100%;
+       height: 80vh;
+    }
+    .form-connection-fields{
+        &__input{
+            width: 20rem;
+        }
+    }    
+}

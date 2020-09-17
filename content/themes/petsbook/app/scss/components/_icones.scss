@@ -1,0 +1,110 @@
+// Homepage
+.main-pet-icons {
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+
+    margin: 5% 0;
+
+    &__link {  
+        margin-bottom: 5%;
+
+    }
+
+    &__icon {
+
+        &__img{
+            width: 8rem;
+            height: 8rem;
+    
+            object-fit: cover;
+            object-position: center;
+    
+            border-radius: 50%;
+        }
+
+        &__type {
+            text-align: center;
+            margin-top: 0.6rem;
+            color: darken($color-grey, 45);
+        }
+    }
+
+    @media (min-width: $breakpoint-large) {
+        width: 70%;
+    
+        margin: 3% 0;
+        margin-left: auto;
+        margin-right: auto;
+
+        &__icon {
+
+            &__img {
+                width: 10rem;
+                height: 10rem;
+        
+                object-fit: cover;
+                object-position: center;
+        
+                border-radius: 50%;
+            }
+
+            &:hover {
+                transform: scale(1.1);
+                transition: all .2s ease-in-out; 
+            }
+        }
+    }
+}
+
+// Health book
+.add-animal {
+   
+
+    &__icone-animal{
+         margin:3rem 0 1rem 0; 
+        &__pic{
+            width: 30%;
+            height: 30%;
+            border-radius: 50%;
+        }
+
+        &:hover {
+            transform: scale(1.1);
+            transition: all .2s ease-in-out; 
+        }
+    }
+}
+
+@media (min-width: $breakpoint-large){
+    .add-animal{
+        &__icone-animal{
+            margin:3rem 0 1rem 0; 
+           &__pic{
+               width: 50%;
+               height: 50%;
+               border-radius: 50%;
+           }
+           &:hover {
+               transform: scale(1.1);
+               transition: all .2s ease-in-out; 
+           }
+   
+       }
+
+    }
+}
+@media (min-width: $breakpoint-large){
+    .icone-animal__pic__{
+        margin-left: 4rem;
+        margin-top: 2rem;
+    }
+}
+
+   
+    
+
+
+

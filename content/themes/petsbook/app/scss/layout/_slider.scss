@@ -1,0 +1,135 @@
+.main-slide {
+    background-color: $color-blue;
+    color: $color-white;
+    border-radius: 0 0 0% 90% / 5% 10%;
+
+    .carousel-inner {
+        height: 100%;
+    }
+
+    .carousel-indicators {
+        margin-bottom: 8%;
+    }
+
+    .carousel-item {
+
+        &-bg {
+            height: 100vh;
+            width: 100%;
+            object-fit: cover;
+            object-position: center;
+
+            // à modifier
+            opacity: 0;
+        }
+
+        &-content {
+            position: absolute;
+            top: 0;
+
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            margin-left: auto;
+            margin-right: auto;
+            
+            height: 100%;
+
+            padding: 2rem;
+            margin-top: 10%;
+
+            &-part {
+
+                &__illu {
+                    width: 20rem;
+                    height: 20rem;
+
+                    border-radius: 50%;
+                }
+
+                &__description {
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    /*------------------------------------------------------------*/
+    @media (min-width: $breakpoint-large) {
+        height: 50rem;
+
+        .carousel-inner {
+            height: 50rem;
+        }
+    
+        .carousel-indicators {
+            margin-bottom: 3%;
+        }
+    
+        .carousel-item {
+    
+            &-bg {
+                height: 40rem;
+    
+                // à modifier
+                opacity: 0;
+            }
+    
+            &-content {
+                position: absolute;
+                top: 0;
+    
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+    
+                margin-left: auto;
+                margin-right: auto;
+                
+                height: 100%;
+                width: 100%;
+    
+                padding: 0 10%;
+                margin-top: 3rem;
+    
+                &-part {
+                    width: 50%;
+                    height: 35rem;
+
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    
+                    &__description {
+                        text-align: left;
+                        width: 50%;
+
+                        background-color: $color-green ;
+                        border-radius: 50% 60% / 10% 95%;
+
+                        padding: 5% 0;
+
+                        &__title {
+                            font-size: $font-size-title-l;
+                            font-weight: bold;
+                        }
+
+                        &__text {
+                            font-size: $font-size-text-m;
+                        }
+                    }
+    
+                    &__illu {
+                        width: 35rem;
+                        height: 35rem;
+    
+                        border-radius: 50%;
+                    }
+
+                }
+            }
+        }
+    }
+}

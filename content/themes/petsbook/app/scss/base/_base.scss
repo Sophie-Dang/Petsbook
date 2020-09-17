@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+  }
+
+  body {
+      overflow-x: hidden; 
+  }
+
+a {
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+ul {
+    margin-bottom: 0;
+}
+
+.is-active {
+    visibility: visible;
+    position: static;
+}
+
+.is-hidden {
+    visibility: hidden;
+    position: absolute;
+    right: 0;
+}
+
+.main-items {
+    margin: $margin-main-large;
+}
+
+

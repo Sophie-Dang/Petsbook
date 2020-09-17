@@ -1,0 +1,514 @@
+.timeline-glimpse__section__intro {
+    background-color: $color-blue;
+    position: relative;
+    height: 500px;
+    &__text {
+        text-align: center;
+        color: white;
+    }
+    &__element {
+        position: absolute;
+    }
+    #element__mountains__2 {
+        background: url('../assets/images/montagne_2.png') no-repeat top center;
+        background-size: cover;
+        opacity: 0;
+        animation: mountains_appear 1s forwards;
+        top: 15px;
+        left: 50%;
+        margin-left: 100px;
+        width: 856px;
+        height: 436px;
+    }
+    #element__mountains__3 {
+        background: url('../assets/images/montagne_3.png') no-repeat top center;
+        background-size: cover;
+        opacity: 0;
+        animation: mountains_appear 1s forwards;
+        top: 30px;
+        left: 50%;
+        margin-left: -1000px;
+        width: 917px;
+        height: 437px;
+    }
+    #element__mountains__4 {
+        background: url('../assets/images/montagne_3.png') no-repeat top center;
+        background-size: cover;
+        opacity: 0;
+        animation: mountains_appear_2 1s forwards;
+        top: 10px;
+        left: 50%;
+        margin-left: 200px;
+        width: 917px;
+        height: 437px;
+    }
+    #element__mountains__5 {
+        background: url('../assets/images/montagne_2.png') no-repeat top center;
+        background-size: cover;
+        opacity: 0;
+        animation: mountains_appear_2 1s forwards;
+        top: 20px;
+        left: 50%;
+        margin-left: -1150px;
+        width: 856px;
+        height: 436px;
+    }
+    #element__tree__20 {
+        background: url('../assets/images/arbre_1.png') no-repeat top center;
+        background-size: cover;
+        opacity: 0;
+        animation: trees_appear_1 2s forwards;
+        top: 250px;
+        left: 50%;
+        margin-left: 575px;
+        width: 150px;
+        height: 235px;
+    }
+    #element__tree__21 {
+        background: url('../assets/images/arbre_1.png') no-repeat top center;
+        background-size: cover;
+        opacity: 0;
+        animation: trees_appear_2 2.8s forwards;
+        top: 200px;
+        left: 50%;
+        margin-left: 795px;
+        width: 150px;
+        height: 235px;
+    }
+    #element__tree__22 {
+        background: url('../assets/images/arbre_1.png') no-repeat top center;
+        background-size: cover;
+        opacity: 0;
+        animation: trees_appear_1 2s forwards;
+        top: 225px;
+        left: 50%;
+        margin-left: 700px;
+        width: 150px;
+        height: 235px;
+    }
+    #element__tree__23 {
+        background: url('../assets/images/arbre_1.png') no-repeat top center;
+        background-size: cover;
+        opacity: 0;
+        animation: trees_appear_2 2.8s forwards;
+        top: 200px;
+        left: 50%;
+        margin-left: -955px;
+        width: 150px;
+        height: 235px;
+    }
+    #element__tree__24 {
+        background: url('../assets/images/arbre_1.png') no-repeat top center;
+        background-size: cover;
+        opacity: 0;
+        animation: trees_appear_1 2s forwards;
+        top: 225px;
+        left: 50%;
+        margin-left: -850px;
+        width: 150px;
+        height: 235px;
+    }
+    #element__tree__25 {
+        background: url('../assets/images/arbre_1.png') no-repeat top center;
+        background-size: cover;
+        opacity: 0;
+        animation: trees_appear_2 2.8s forwards;
+        top: 250px;
+        left: 50%;
+        margin-left: -685px;
+        width: 150px;
+        height: 235px;
+    }
+    #element__tree__26 {
+        background: url('../assets/images/arbre_1.png') no-repeat top center;
+        background-size: cover;
+        opacity: 0;
+        animation: trees_appear_1 2s forwards;
+        top: 250px;
+        left: 50%;
+        margin-left: -505px;
+        width: 150px;
+        height: 235px;
+    }
+    #element__tree__27 {
+        background: url('../assets/images/arbre_1.png') no-repeat top center;
+        background-size: cover;
+        opacity: 0;
+        animation: trees_appear_2 2.8s forwards;
+        top: 230px;
+        left: 50%;
+        margin-left: -405px;
+        width: 150px;
+        height: 235px;
+    }
+    #element__bush__3 {
+        background: url('../assets/images/buisson_1.png') no-repeat top center;
+        background-size: cover;
+        opacity: 0;
+        animation: bush_appear_1 2.8s forwards;
+        top: 410px;
+        left: 50%;
+        margin-left: -980px;
+        width: 209px;
+        height: 96px;
+    }
+    #element__bush__4 {
+        background: url('../assets/images/buisson_2.png') no-repeat top center;
+        background-size: cover;
+        opacity: 0;
+        animation: bush_appear_1 2.8s forwards;
+        top: 400px;
+        left: 50%;
+        margin-left: -800px;
+        width: 234px;
+        height: 111px;
+    }
+    #element__bush__5 {
+        background: url('../assets/images/buisson_1.png') no-repeat top center;
+        background-size: cover;
+        opacity: 0;
+        animation: bush_appear_1 2.8s forwards;
+        top: 410px;
+        left: 50%;
+        margin-left: -630px;
+        width: 209px;
+        height: 96px;
+    }
+    #element__fence__5{
+        background: url('../assets/images/barriere.png') no-repeat top center;
+        background-size: cover; 
+        opacity: 0;
+        animation: fence_appear_1 2.2s forwards;
+        top: 430px;
+        left: 50%;
+        margin-left: -556px;
+        width: 249px;
+        height: 74px;
+    }
+    #element__fence__6{
+        background: url('../assets/images/barriere.png') no-repeat top center;
+        background-size: cover; 
+        opacity: 0;
+        animation: fence_appear_1 2.2s forwards;
+        top: 430px;
+        left: 50%;
+        margin-left: -307px;
+        width: 249px;
+        height: 74px;
+    }
+    #element__door__1{
+        background: url('../assets/images/portail.png') no-repeat top center;
+        background-size: cover; 
+        opacity: 0;
+        animation: door_appear_1 2.8s forwards;
+        top: 430px;
+        left: 50%;
+        margin-left: -58px;
+        width: 123px;
+        height: 74px;
+    }
+    #element__fence__7{
+        background: url('../assets/images/barriere.png') no-repeat top center;
+        background-size: cover; 
+        opacity: 0;
+        animation: fence_appear_2 2.2s forwards;
+        top: 430px;
+        left: 50%;
+        margin-left: 313px;
+        width: 249px;
+        height: 74px;
+    }
+    #element__fence__8{
+        background: url('../assets/images/barriere.png') no-repeat top center;
+        background-size: cover; 
+        opacity: 0;
+        animation: fence_appear_2 2.2s forwards;
+        top: 430px;
+        left: 50%;
+        margin-left: 64px;
+        width: 249px;
+        height: 74px;
+    }
+    #element__bush__6 {
+        background: url('../assets/images/buisson_1.png') no-repeat top center;
+        background-size: cover;
+        opacity: 0;
+        animation: bush_appear_2 2.8s forwards;
+        top: 410px;
+        left: 50%;
+        margin-left: 850px;
+        width: 209px;
+        height: 96px;
+    }
+    #element__bush__7 {
+        background: url('../assets/images/buisson_2.png') no-repeat top center;
+        background-size: cover;
+        opacity: 0;
+        animation: bush_appear_2 2.8s forwards;
+        top: 410px;
+        left: 50%;
+        margin-left: 680px;
+        width: 200px;
+        height: 95px;
+    }
+    #element__fence__9{
+        background: url('../assets/images/barriere.png') no-repeat top center;
+        background-size: cover; 
+        opacity: 0;
+        animation: fence_appear_2 2.2s forwards;
+        top: 430px;
+        left: 50%;
+        margin-left: 562px;
+        width: 249px;
+        height: 74px;
+    }
+    #element__bush__8 {
+        background: url('../assets/images/buisson_1.png') no-repeat top center;
+        background-size: cover;
+        opacity: 0;
+        animation: bush_appear_2 2.8s forwards;
+        top: 437px;
+        left: 50%;
+        margin-left: 534px;
+        width: 150px;
+        height: 69px;
+    }
+    #element__flower__86 {
+        background: url('../assets/images/fleur_4.png') no-repeat top center;
+        background-size: cover;
+        opacity: 0;
+        animation: flowers_appear_1 1.9s forwards;
+        top: 471px;
+        left: 50%;
+        margin-left: 325px;
+        width: 15px;
+        height: 32px;
+    }
+    #element__flower__87 {
+        background: url('../assets/images/fleur_1.png') no-repeat top center;
+        background-size: cover;
+        opacity: 0;
+        animation: flowers_appear_1 1.9s forwards;
+        top: 471px;
+        left: 50%;
+        margin-left: 825px;
+        width: 15px;
+        height: 46px;
+    }
+    #element__flower__88 {
+        background: url('../assets/images/fleur_2.png') no-repeat top center;
+        background-size: cover;
+        opacity: 0;
+        animation: flowers_appear_1 1.9s forwards;
+        top: 471px;
+        left: 50%;
+        margin-left: -135px;
+        width: 15px;
+        height: 32px;
+    }
+    #element__flower__89 {
+        background: url('../assets/images/fleur_3.png') no-repeat top center;
+        background-size: cover;
+        opacity: 0;
+        animation: flowers_appear_1 1.9s forwards;
+        top: 471px;
+        left: 50%;
+        margin-left: 470px;
+        width: 15px;
+        height: 35px;
+    }
+    #element__flower__90 {
+        background: url('../assets/images/fleur_4.png') no-repeat top center;
+        background-size: cover;
+        opacity: 0;
+        animation: flowers_appear_1 1.9s forwards;
+        top: 471px;
+        left: 50%;
+        margin-left: -325px;
+        width: 15px;
+        height: 32px;
+    }
+    #element__flower__91 {
+        background: url('../assets/images/fleur_1.png') no-repeat top center;
+        background-size: cover;
+        opacity: 0;
+        animation: flowers_appear_1 1.9s forwards;
+        top: 471px;
+        left: 50%;
+        margin-left: -625px;
+        width: 15px;
+        height: 46px;
+    }
+    #element__flower__92 {
+        background: url('../assets/images/fleur_2.png') no-repeat top center;
+        background-size: cover;
+        opacity: 0;
+        animation: flowers_appear_1 1.9s forwards;
+        top: 471px;
+        left: 50%;
+        margin-left: 235px;
+        width: 15px;
+        height: 32px;
+    }
+    #element__flower__93 {
+        background: url('../assets/images/fleur_3.png') no-repeat top center;
+        background-size: cover;
+        opacity: 0;
+        animation: flowers_appear_1 1.9s forwards;
+        top: 471px;
+        left: 50%;
+        margin-left: -570px;
+        width: 15px;
+        height: 35px;
+    }
+    #element__flower__94 {
+        background: url('../assets/images/fleur_4.png') no-repeat top center;
+        background-size: cover;
+        opacity: 0;
+        animation: flowers_appear_1 1.9s forwards;
+        top: 471px;
+        left: 50%;
+        margin-left: 625px;
+        width: 15px;
+        height: 32px;
+    }
+    #element__flower__95 {
+        background: url('../assets/images/fleur_4.png') no-repeat top center;
+        background-size: cover;
+        opacity: 0;
+        animation: flowers_appear_1 1.9s forwards;
+        top: 471px;
+        left: 50%;
+        margin-left: -825px;
+        width: 15px;
+        height: 32px;
+    }
+    #element__lawn {
+        background-color:$color-green;
+        bottom: 0px;
+        left: 0%;
+        margin-left: 0px;
+        width: 100%;
+        height: 151px;
+        
+    }
+   
+}
+// ici on gère tous les keyframes from --> to des éléments de la section d'intro, c'est à dire tous les élements qui apparaissent dès le chargement de la page. Pas besoin donc de scrollex.
+@keyframes mountains_appear {
+    from {
+      opacity: 0; 
+      transform: translate3d(-100px, 0, 0); 
+    }
+  
+    to {
+        opacity: 1; 
+        transform: translate3d(0, 0, 0);       
+    }
+  }
+
+  @keyframes mountains_appear_2 {
+    from {
+      opacity: 0; 
+      transform: translate3d(100px, 0, 0); 
+    }
+  
+    to {
+        opacity: 1; 
+        transform: translate3d(0, 0, 0);       
+    }
+  }
+
+  @keyframes trees_appear_1 {
+    from {
+      opacity: 0; 
+      transform: translate3d(0, -300px, 0); 
+    }
+  
+    to {
+        opacity: 1; 
+        transform: translate3d(0, 0, 0);       
+    }
+  }
+
+  @keyframes trees_appear_2 {
+    from {
+      opacity: 0; 
+      transform: translate3d(0, -400px, 0); 
+    }
+  
+    to {
+        opacity: 1; 
+        transform: translate3d(0, 0, 0);       
+    }
+  }
+
+  @keyframes bush_appear_1 {
+    from {
+      opacity: 0; 
+      transform: translate3d(-400px, 0, 0); 
+    }
+  
+    to {
+        opacity: 1; 
+        transform: translate3d(0, 0, 0);       
+    }
+  }
+
+  @keyframes bush_appear_2 {
+    from {
+      opacity: 0; 
+      transform: translate3d(400px, 0, 0); 
+    }
+  
+    to {
+        opacity: 1; 
+        transform: translate3d(0, 0, 0);       
+    }
+  }
+  @keyframes fence_appear_1 {
+    from {
+      opacity: 0; 
+      transform: translate3d(-900px, 0, 0); 
+    }
+  
+    to {
+        opacity: 1; 
+        transform: translate3d(0, 0, 0);       
+    }
+  }
+  @keyframes fence_appear_2 {
+    from {
+      opacity: 0; 
+      transform: translate3d(900px, 0, 0); 
+    }
+  
+    to {
+        opacity: 1; 
+        transform: translate3d(0, 0, 0);       
+    }
+  }
+
+  @keyframes door_appear_1 {
+    from {
+      opacity: 0; 
+      transform: translate3d(0, 50px, 0); 
+    }
+  
+    to {
+        opacity: 1; 
+        transform: translate3d(0, 0, 0);       
+    }
+  }
+
+  @keyframes flowers_appear_1 {
+    from {
+      opacity: 0; 
+      transform: translate3d(0, 20px, 0); 
+    }
+  
+    to {
+        opacity: 1; 
+        transform: translate3d(0, 0, 0);       
+    }
+  }

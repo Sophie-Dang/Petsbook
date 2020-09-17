@@ -1,0 +1,206 @@
+// Homepage
+.main-timelines {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    margin: $margin-main-large;
+    margin-bottom: 5%;
+
+    color: $color-white;
+
+    @media (min-width: $breakpoint-large) {
+        justify-content: space-evenly;
+
+        background-color: $color-beige;
+        border-radius: 50% 20% / 10% 40%;
+
+        padding-top: 2%;
+    }
+}
+
+// Timeline edit Page
+.timeline-edit {
+
+    &-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    &__header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+        
+
+        height: 40vh;
+        width: 100%;
+        padding-top: 10%;
+
+        background-color: $color-orange;
+        color: $color-white;
+
+        &__button {
+            padding: .5rem 1rem;
+            background-color: $color-white;
+            border-radius: 5px;
+
+            font-weight: bold;
+            color: $color-orange;
+            margin-top: 1rem;
+
+        }
+
+        &__text {
+            font-weight: bold;
+            font-size: $font-size-text-l;
+            margin-top: 2rem;
+        }
+    }
+
+    &__items {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+
+        margin: 8% 0;
+
+        .add-icon {
+            background-color: $color-grey;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            font-size: 6rem;
+            color: $color-white;
+
+            &:hover {
+                .fa {
+                    transform: scale(1.1);
+                    transition: all .3s ease-in-out; 
+                }
+            }
+        }
+    }
+
+    @media (min-width: $breakpoint-large) {
+
+        &__items {
+            margin: 3% auto;
+            width: 80%;
+
+            align-items: center;
+            justify-content: flex-start;
+
+            .add-icon {
+                font-size: 8.5rem;
+            }
+        }
+
+        &__header {
+            padding-top: 5%;
+
+            &__button {
+
+                &:hover {
+                    transform: scale(1.1);
+                    transition: all .2s ease-in-out; 
+                    color: $color-orange;
+                }
+            }
+        }
+    }
+}
+
+
+//page inscription:
+.top{
+    text-align: center;
+    margin:2em 0 ;
+
+
+}
+.user-informations{
+    text-align: center;
+    flex-direction: column;
+    display: flex;
+    width: 50%;
+    margin:auto;
+}
+
+.top-info{
+        text-align: center;  
+}
+
+// Account general
+.account-general {
+
+    &-animal-wrapper {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        margin: auto; 
+        justify-content: space-evenly;
+        margin-bottom: 8%;
+        margin-top: 5%;
+    }
+
+    &-block {
+        border-radius: 8px;
+        width: 80%;
+
+        margin-bottom: 2rem;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    @media (min-width: $breakpoint-large) {
+
+        &-block {
+            width: 48%;
+            height: 500px;
+
+            margin-bottom: 20px;
+        }
+
+        &-animal-wrapper {
+            margin-bottom: 5%;
+            margin-top: 0;
+        }
+    }
+}
+
+.animal-infos__list {
+    
+    text-align: center !important;
+    color: darken($color-grey, 25);
+    font-weight: bold;
+
+}
+
+.animal-infos__title {
+    color: darken($color-grey, 25);
+}
+
+.health-book {
+    &__title {
+        h3 {
+        color: darken($color-grey, 25);
+        font-weight: bold;
+        }  
+    }
+    ul {
+        text-align: center !important;
+        color: darken($color-grey, 25);
+        font-weight: bold;
+    }
+
+}
+

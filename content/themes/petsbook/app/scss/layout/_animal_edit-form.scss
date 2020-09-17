@@ -1,0 +1,333 @@
+// Health-book Edit Bg beige
+.info-animal-wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10%;
+    padding: 3% 0;
+    background-color: $color-beige;
+    border-radius: 120% 4% / 6% 0%;
+}
+
+// Health-book Edit Form
+.form__infos__animal{
+    margin: $margin-main-large;
+    margin-top:5%;
+    margin-bottom: 10%;
+    color:darken($color-white, 55);
+    text-align: center;
+    
+    &__title{
+        font-size: $font-size-title-m;
+        text-align: center;   
+        margin-bottom: 4%;
+    }
+
+    &__edit{
+        padding-bottom: 3%;
+        flex-wrap: wrap;
+
+        .infos__animal__edit__paragraph{
+
+            label{
+                margin-top:1%;
+                font-weight: 600;
+            }
+
+            input{
+                width:50%;
+                display: block;
+
+                margin-left: auto;
+                margin-right: auto;
+                margin-bottom: 3%;
+
+                border: none;
+                background-color: $color-white;
+                color: darken($color-grey, 40);
+                text-align: center;
+
+                &:focus {
+                    outline: none;
+                }
+
+            }
+
+            textarea{
+                width:50%;
+                display: block;
+
+                margin-left: auto;
+                margin-right: auto;
+
+                border: none;
+                background-color: $color-white;
+                color: darken($color-grey, 40);
+
+                &:focus {
+                    outline: none;
+                }
+            }
+
+            select {
+                display: block;
+                width:50%;
+
+                margin-left: auto;
+                margin-right: auto;
+                margin-bottom: 3%;
+
+                border: none;
+                background-color: $color-white;
+                color: darken($color-grey, 40);
+
+                text-align-last:center;
+
+                &:focus {
+                    outline: none;
+                }
+            }
+
+            .radio{
+                display: flex;
+                justify-content: center; 
+                width: 100%;
+
+                .infos__animal__edit__paragraph__radio{
+                   margin:0; 
+                   width: 20%;
+                   align-self: center;
+                }
+
+                label {
+                    margin: 0;
+                }
+            }
+
+            .radios {
+                display:flex;
+                align-items: center;
+
+                margin-bottom: 3%;
+            }
+        }
+    }
+
+    .validate{
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        justify-content:center;
+        width: 100%;
+
+        margin:1%;
+        &__button{
+            margin-bottom:2%;
+            width: 80%;
+            padding:.5rem 1rem;
+            background-color: $color-white;
+            color: darken($color-grey,35);
+            font-weight: bold;
+            border-radius: 5px;
+
+            &:hover {
+                transform: scale(1.1);
+                transition: all .2s ease-in-out; 
+            }
+
+        }
+
+    }
+
+    .validate-account_user_info {
+        display:flex;
+        flex-direction:row;
+        justify-content:center;
+
+        .button-account_user_info {
+            border: none;
+        }
+
+        .validate__button_2 {
+            width: 30%;
+            font-size: 15px;
+            padding:.5rem 1rem;
+            background-color: $color-white;
+            color: darken($color-grey,35);
+            font-weight: bold;
+            border-radius: 5px;
+
+            &:hover {
+                transform: scale(1.1);
+                transition: all .2s ease-in-out; 
+            }  
+        }
+    }
+}
+
+    
+
+@media (min-width: $breakpoint-large){
+      
+    .info-animal-wrapper {
+        border-radius: 18% 37% / 44% 44%;
+        padding: 0.01rem 0;
+        margin: 0% 7%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 5%;
+        width: 60%;
+        background-color: $color-green;
+    }
+
+    .user-infos-wrap {
+        margin-top: 5%;
+    }
+
+    .form__infos__animal{
+        margin:1.3% 2.5%;
+        padding: 3% 10%;
+
+        background-color: $color-beige;
+        border-radius: 46% 12% / 9% 40%;
+
+        &__title{
+            font-size: $font-size-title-xl;
+        }
+
+        &__edit{
+            font-size: $font-size-text-m;
+            display: flex;
+            margin-top: 6%;
+        
+            .infos__animal__edit__paragraph {
+
+                label{
+                    display: flex;
+                    margin-top: 0;
+                }
+                input{
+                    margin: 0;
+                    width: 100%;
+                    margin-bottom: 8%;
+                    background-color: darken($color-green, 10);
+                    background-color: $color-white;
+
+                    &:focus {
+                        outline: none;
+                    }
+                }
+                textarea{
+                    margin: 0;
+                    width: 100%;
+                    margin-bottom: 8%;
+
+                    background-color: darken($color-green, 10);
+                    background-color: $color-white;
+
+                    &:focus {
+                        outline: none;
+                    }
+                }
+
+                .radio {
+                    width:100%;
+                    margin: 0;
+                    margin-bottom: 5%;
+                    justify-content: flex-start;
+
+                    .infos__animal__edit__paragraph__radio{
+                       margin:1%;
+                       margin-right: 5%;
+                    }
+                }
+            }
+        }
+
+        .infos-pet-edit {
+            flex-direction: column;
+            align-items: center; 
+            justify-content: center; 
+
+            .infos__animal__edit__paragraph {
+                width: 50%;       
+
+                label {
+                    display: flex;
+                    justify-content: center;
+                }
+
+                select {
+                    width: 100%;
+                    margin-bottom: 8%;
+                }
+            }
+        }
+
+        .validate{
+            flex-direction:row;
+            justify-content: space-evenly;
+        
+            &__button{
+                width: 35%;
+                font-size: 15px;
+            }   
+            &__button_2 {
+                width: 18%;
+                font-size: 15px;
+                padding:.5rem 1rem;
+                background-color: $color-white;
+                color: darken($color-grey,35);
+                font-weight: bold;
+                border-radius: 5px;
+            }
+        }
+
+        .three_btns {
+            justify-content: space-between;
+
+            .three_btn {
+                width: 30%;
+            }
+        }
+
+        .validate-account_user_info {
+            flex-direction:row;
+            justify-content:center;
+            
+
+            .button-account_user_info {
+                border: none;
+
+                &:focus {
+                    outline: none;
+                }
+            }
+        }
+    }  
+    
+    
+    .spec-bookedit {
+
+        &__wrap {
+            
+            .infos__animal__edit__paragraph {   
+                input {
+                    text-align: left;
+                }
+            }
+        }
+    }
+    
+    .book-edit__general-infos {
+        width: 50%;
+        padding-right: 8%;
+    }
+
+    .book-edit__medical {
+        width: 50%;
+        padding-left: 8%;
+
+        border-left: 1px solid $color-beige;
+    }
+}
+

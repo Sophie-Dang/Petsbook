@@ -1,0 +1,260 @@
+.header {
+    background-color: transparent;
+    width: 100vw;
+    padding:0.5% 0;
+    position: absolute;
+    z-index: 100;
+   
+    /*-----------------------------------*/
+    &-nav {
+        margin: 0 3%;
+
+        /*-----------------------------------*/
+        &__items__left {    
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+        
+            &__logo {
+                object-fit: contain;
+                object-position: center;
+
+                width: 5rem;
+                height: 5rem;
+
+                margin-right: 2rem;  
+            }
+
+            &__part {
+
+                &__link {
+                    color: $color-white;
+
+                    &:hover {
+                        color: $color-beige;
+                        transition: all .2s ease-in-out; 
+                    }
+                }
+            }
+        }  
+
+        /*-----------------------------------*/
+        &__items__right {
+            height: 100%;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+
+            &__part {
+                color: $color-white;
+
+                &:hover {
+                    color: $color-beige;
+                    transition: all .2s ease-in-out; 
+                }
+
+                &__link {
+                    color: $color-white;
+
+                    &:hover {
+                        color: $color-beige;
+                        transition: all .2s ease-in-out; 
+                    }
+                }
+            }
+        }
+
+        .right-element {
+            display: flex;
+            align-items: center;
+
+            .fa-bell {
+                margin-right: 2rem;
+                font-size: $font-size-text-xl;
+            }
+        }
+
+        .navbar-toggler {
+            border: none;
+
+            &:focus {
+                outline: none;
+            }
+
+            .fa {
+                color: $color-white;
+                font-size: 2rem;
+            } 
+        }
+
+        /*-----------------------------------*/
+        .nav-link {
+            display: flex;
+            align-items: center;
+        }
+
+        /*-----------------------------------*/
+        @media (min-width: $breakpoint-large) {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: row;
+        
+            margin: 0 3%;
+
+            /*-----------------------------------*/
+            &__items__left {
+                display: flex; 
+                flex-direction: row;   
+                justify-content: flex-start;
+
+                &__logo {
+                    object-fit: contain;
+                    object-position: center;
+
+                    width: 5rem;
+                    height: 5rem;
+
+                    margin-right: 2rem;  
+                }
+
+                &__part {
+                    display: flex;
+                    align-items: center;
+
+                    &__link {
+                        color: $color-white;
+
+                        &:hover {
+                            color: $color-beige;
+                            transition: all .2s ease-in-out; 
+                        }
+                    }
+                }
+            }  
+
+            /*-----------------------------------*/
+            &__items__right {
+                display: flex;
+                flex-direction: row;
+                height: 100%;
+
+                &__part {
+                    display: flex;
+                    justify-content: space-between;
+                    color: $color-white;
+
+                    &:hover {
+                        color: $color-beige;
+                        transition: all .2s ease-in-out; 
+                    }
+
+                    &__link {
+                        margin: 0 1rem;
+                        color: $color-white;
+
+                        &:hover {
+                            color: $color-beige;
+                            transition: all .2s ease-in-out; 
+                        }
+                    }
+                }
+            }
+
+            /*-----------------------------------*/
+            .nav-link {
+                display: flex;
+                align-items: center;
+            }
+        }
+    } 
+    
+    .navbar-collapse {
+        background-color: $color-blue;
+        margin: 0 -5.499%;
+        height: 22rem;
+    
+
+        @media(min-width : $breakpoint-large) {
+            background-color: transparent;
+            margin: 0;
+            height: initial;
+
+        }
+    }
+
+}
+
+/*----------------------------------------------------*/
+.second-header {
+    position: static;
+    background-color: $color-grey;
+    
+    /*-----------------------------------*/
+    // Left links
+    .header-nav__items__right__part__link {
+        color: darken($color-grey, 40);
+
+        &:hover {
+            color: darken($color-white, 65);
+            transition: all .2s ease-in-out; 
+        }
+    }
+
+    /*-----------------------------------*/
+    // Right links
+    .header-nav__items__left__part__link {
+        color: darken($color-grey, 40);
+
+        &:hover {
+            color: darken($color-white, 65);
+            transition: all .2s ease-in-out; 
+        }
+    }
+
+    /*-----------------------------------*/
+    // Burger Menu
+    .header-nav__items__right__part {
+        color: darken($color-grey, 40);
+
+        &:hover {
+            color: darken($color-white, 65);
+            transition: all .2s ease-in-out; 
+        }
+    }
+
+    .right-element {
+        display: flex;
+        align-items: center;
+
+        .fa-bell {
+            margin-right: 2rem;
+            font-size: $font-size-text-xl;
+        }
+    }
+
+    .navbar-toggler {
+        border: none;
+
+        &:focus {
+            outline: none;
+        }
+
+        .fa {
+            color: darken($color-grey, 40);
+            font-size: 2rem;
+        } 
+    }
+    .navbar-collapse {
+        background-color: $color-grey;
+        margin: 0 -5.499%;
+        height: 22rem;
+
+        @media(min-width : $breakpoint-large) {
+            background-color: transparent;
+            margin: 0;
+            height: initial;
+
+        }
+    }
+}

@@ -1,0 +1,99 @@
+//Contact
+.form-contact__button{
+    
+    border-style: none;
+    border: 2px solid;
+    border-radius: 0.3rem;
+    border-color: $color-grey;
+    font-size: $font-size-default;
+    background-color: white;
+}
+@media (min-width: $breakpoint-large) {
+    .form-contact__button{
+        margin-bottom: 1rem;
+        margin-left: 7rem;
+    }
+}
+//Connexion
+.form-connection__button{
+       
+    border-style: none;
+    border: none;
+    border-radius: 5px;
+    background-color :darken($color-grey, 25);
+    margin: 1rem 0;
+    padding:0.5rem 1rem;
+    color: $color-white;
+    font-weight: bold;
+
+    &:hover {
+        transform: scale(1.1);
+        transition: all .2s ease-in-out; 
+    }  
+}
+// @media (min-width: $breakpoint-large) {
+//     .form-contact__button{
+
+//     }
+// }
+
+//inscription
+.user-informations{
+
+    &__signup{
+        display: flex;
+        flex-direction: column;
+        &__submit{
+        
+            margin:2em auto 3em auto;
+            background-color :darken($color-grey, 25);
+            border-radius: 5px;
+            padding:0.5rem 1rem;
+            color: $color-white;
+            border: none;
+            font-weight: bold;
+            
+            &:hover {
+                transform: scale(1.1);
+                transition: all .2s ease-in-out; 
+            }  
+        }
+    }
+}
+
+.btn-edit{
+    margin:1rem 0;
+    
+}
+
+.btn-see{
+    margin: 1rem 0;
+}
+
+.timeline-edit__header__button {
+    border: none;
+}
+
+.input-file::-webkit-file-upload-button {
+    visibility: hidden;
+  }
+  .input-file::before {
+    content: 'Parcourir...';
+    display: inline-block;
+    background: linear-gradient(top, #f9f9f9, #e3e3e3);
+    border: 1px solid $color-white;
+    border-radius: 3px;
+    padding: 5px 8px;
+    outline: none;
+    white-space: nowrap;
+    -webkit-user-select: none;
+    cursor: pointer;
+    font-size: 10pt;
+  }
+  .input-file:hover::before{
+    background-color: $color-white;
+    color: $color-orange;
+  }
+  .input-file:active::before {
+    background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
+  }

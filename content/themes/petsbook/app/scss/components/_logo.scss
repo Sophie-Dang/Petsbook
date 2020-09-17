@@ -1,0 +1,31 @@
+
+//Connexion
+.connection{
+    &__logo{
+        height: 10rem;
+        width: 10rem;
+    }
+}
+@media (min-width: $breakpoint-large) {
+    .connection{
+        &__logo{
+            height: 15rem;
+            width: 15rem;
+        }
+    }
+}
+
+
+//logo page inscription
+.top__background{
+        width: 50%;
+        height: 50%;
+}
+@media (min-width: $breakpoint-large)  {
+        .top__background{ 
+                width: 15rem;
+                height: 15rem;
+        }
+
+}
+

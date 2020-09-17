@@ -1,0 +1,37 @@
+.team {
+
+    &__title {
+        margin: 10% 0;
+        text-align: center;
+    }
+
+    &-items {
+        background-color: $color-blue;
+
+        &__item {
+            background-color: $color-white;
+            border: 1px solid $color-blue;
+
+            &__text {
+                color: darken($color-grey, 40);
+            }
+
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6 {
+                color: #4c4c4c;
+            }
+        }
+    }
+
+    @media (min-width : $breakpoint-large) {
+
+        &__title {
+            margin: 5% 0;
+            font-size: $font-size-title-xl;
+        }
+    }
+}

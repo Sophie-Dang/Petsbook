@@ -1,0 +1,53 @@
+@charset 'UTF-8';
+
+// 1. Abstracts
+@import 
+    'abstracts/vars';
+
+// 2. Base
+@import 
+    '~font-awesome/scss/font-awesome',
+    '~reset-css/sass/reset',
+    '~bootstrap/scss/bootstrap',
+    'base/base',
+    'base/typo';
+
+// 3. Layout
+@import
+    'layout/animal_edit-form',
+    'layout/animal_retreive-form',
+    'layout/buttons',
+    'layout/footer',
+    'layout/header',
+    'layout/links',
+    'layout/posts',
+    'layout/slider',
+    'layout/timeline';
+
+// 4. Components
+@import
+    'components/button',
+    'components/form',
+    'components/icones',
+    'components/link',
+    'components/logo',
+    'components/picture',
+    'components/post',
+    'components/timeline_section_1',
+    'components/timeline_section_2',
+    'components/timeline_section_3',
+    'components/timeline_section_4',
+    'components/timeline_section_intro';
+
+    
+// 5. Pages
+@import
+    'pages/page',
+    'pages/legal-mentions',
+    'pages/team-page';
+
+
+// 6. Shame
+@import
+    'shame';
+

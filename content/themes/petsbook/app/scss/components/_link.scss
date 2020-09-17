@@ -1,0 +1,292 @@
+//Homepage
+.main-timelines__item__button {
+    background-color: $color-white;
+    border-radius: 5px;
+
+    padding: 0.5rem 1rem;
+
+    color: $color-orange;
+    font-weight: bold;
+
+    align-self: flex-end;
+
+    &:hover {
+        transform: scale(1.1);
+        transition: all .2s ease-in-out; 
+        color: $color-orange;
+    }
+
+    &-container {
+        width: 100%;
+        text-align: center;
+
+        &:hover {
+            transform: scale(1.1);
+            transition: all .2s ease-in-out; 
+        }
+    }
+}
+
+.public-private {
+    display: flex;
+    justify-content: center;
+
+    margin: 4% 0;
+
+    &__public {
+        width: 50%;
+        text-align: center;
+        margin: 1.5%;
+        padding: 0 2rem;
+        border-right: 1px solid darken($color-grey, 45);
+
+        &__title {
+            color: darken($color-grey, 45);
+            font-size: $font-size-text-m;
+            font-weight: bold;
+
+            &:hover {
+                transform: scale(1.5);
+                transition: all .2s ease-in-out; 
+                color: $color-blue;
+            }
+        }
+    }
+
+    &__private {
+        width: 50%;
+        text-align: center;
+        margin: 1.5%;
+        padding: 0 2rem;
+
+        align-self: center;
+
+        &__title {
+            color: darken($color-grey, 45);
+            font-size: $font-size-text-m;
+            font-weight: bold;
+
+            &:hover {
+                transition: all .2s ease-in-out; 
+                color: $color-blue;
+            }
+        }
+    }
+
+    @media (min-width: $breakpoint-large) {
+        margin: 2% 0;
+        margin-top: 2%;
+
+        &__public {
+            width: 50%;
+            text-align: right;
+            margin: 1.5%;
+            margin-right: 0;
+            padding: 0 2rem;
+            border-right: 1px solid darken($color-grey, 45);
+    
+            &__title {
+                color: darken($color-grey, 45);
+                font-size: $font-size-title-m;
+                font-weight: bold;
+            }
+        }
+    
+        &__private {
+            width: 50%;
+            text-align: left;
+            margin: 1.5%;
+            margin-left: 0;
+            padding: 0 2rem;
+    
+            align-self: center;
+    
+            &__title {
+                color: darken($color-grey, 45);
+                font-size: $font-size-title-m;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+
+//connexion
+.form-connection__link{
+    margin-top: 3rem;
+}
+
+// ACCOUNT_GENERAL page
+// lien modifier mon profile haut de page
+.top-info__user__edit-profile{
+    color:$color-white;
+    font-size:$font-size-default; 
+
+    &:hover {
+        transition: all .2s ease-in-out; 
+        color:$color-beige;
+    }  
+}
+  
+//liens mon animal haut de pages avec icones (icones ds scss icones)
+.add-animal__add
+{
+color:$color-blue;
+&:hover {
+    transform: scale(1.5);
+    transition: all .2s ease-in-out; 
+    color:$color-beige ;
+        }
+//lien pour ajouter un animal (haut de page)
+        &__link {
+        color:$color-blue;
+        &:hover {
+            transform: scale(1.5);
+            transition: all .2s ease-in-out; 
+            color:$color-beige;
+            }
+        }
+}
+
+@media (min-width: $breakpoint-large)
+{
+    .add-animal__add{
+        color:$color-beige;
+        &:hover {
+            transform: scale(1.5);
+            transition: all .2s ease-in-out; 
+            color:white ;
+        }
+        &__link{
+            color:$color-beige;
+            &:hover {
+                transform: scale(1.5);
+                transition: all .2s ease-in-out; 
+                color:white;
+            }
+        }
+    }
+}
+
+// .edit=liens editer (2 boxes) bas de page
+.edit
+{
+    padding:0.5rem 1rem;
+    border-radius:5px;
+    background-color: darken($color-grey, 25);
+    color: $color-white;
+
+    background-color: darken($color-grey, 25);
+    color: $color-white;
+
+    &:hover {
+        transform: scale(1.1);
+        transition: all .2s ease-in-out; 
+        background-color: darken($color-grey, 25);
+        color: $color-white;
+    }
+
+    @media (min-width: $breakpoint-large) {
+        background-color: $color-white;
+        color: darken($color-grey, 25);
+
+        &:hover {
+            color: darken($color-grey, 25);
+            background-color: $color-white;
+        }
+    }
+}
+
+// .see=liens voire (boxes) bas de page
+.see
+{
+    padding:0.5rem 1rem;
+    border-radius:5px;
+    background-color: darken($color-grey, 25);
+    color: $color-white;
+
+    background-color: darken($color-grey, 25);
+    color: $color-white;
+
+    &:hover {
+        transform: scale(1.1);
+        transition: all .2s ease-in-out; 
+        background-color: darken($color-grey, 25);
+        color: $color-white;
+    }
+
+    @media (min-width: $breakpoint-large) {
+        background-color: $color-white;
+        color: darken($color-grey, 25);
+
+        &:hover {
+            color: darken($color-grey, 25);
+            background-color: $color-white;
+        }
+    }
+}
+
+//.edit-timeline=lien pour editer la timeline ( derniere box bas de page)
+.edit-timeline
+{
+    padding:0.5rem 1rem;
+    border-radius:5px;
+    background-color: darken($color-grey, 25);
+    color: $color-white;
+
+    background-color: darken($color-grey, 25);
+    color: $color-white;
+
+    &:hover {
+        transform: scale(1.1);
+        transition: all .2s ease-in-out; 
+        background-color: darken($color-grey, 25);
+        color: $color-white;
+    }
+
+    @media (min-width: $breakpoint-large) {
+        background-color: $color-white;
+        color: darken($color-grey, 25);
+
+        &:hover {
+            color: darken($color-grey, 25);
+            background-color: $color-white;
+        }
+    }
+}
+
+//.see-timeline=lien pour voire la timeline ( derniere box bas de page)
+.see-timeline
+{
+    padding:0.5rem 1rem;
+    border-radius:5px;
+
+    background-color: darken($color-grey, 25);
+    color: $color-white;
+
+    &:hover {
+        transform: scale(1.1);
+        transition: all .2s ease-in-out; 
+        background-color: darken($color-grey, 25);
+        color: $color-white;
+    }
+
+    @media (min-width: $breakpoint-large) {
+        background-color: $color-white;
+        color: darken($color-grey, 25);
+
+        &:hover {
+            color: darken($color-grey, 25);
+            background-color: $color-white;
+        }
+    }
+}
+
+
+.add-animal__icone-animal__pic__single{
+    border-radius: 50%;
+}
+
+//fin du code Romary
+    
+

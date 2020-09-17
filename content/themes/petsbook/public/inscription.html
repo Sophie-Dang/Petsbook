@@ -1,0 +1,130 @@
+<!--HEAD-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PetsBook-homepage</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<!--/HEAD-->
+<body>
+  <div class="wrapper">
+  <!--HEADER-->
+  <header class="header second-header">
+    <nav class="header-nav">
+      <div class="header-nav__items__left">
+        <!--logo-->
+       <a href="#"><img class="header-nav__items__left__logo" src="images/logo-fond-transparent.png" alt=""></a>
+        <!--/logo-->
+
+        <!--items_links left-->
+        <div class="header-nav__items__left__part">
+          <a href="" class="header-nav__items__left__part__link">Accueil</a>
+        </div>
+      </div>
+
+      <!--items_links right-->
+      <div class="header-nav__items__right">
+        <ul class="header-nav__items__right__part is-hidden">
+          <li><a href="" class="header-nav__items__right__part__link"><i class="fa fa-bell" aria-hidden="true"></i></a></li>
+          <li><a href="" class="header-nav__items__right__part__link">Inscription</a></li>
+          <li><a href="" class="header-nav__items__right__part__link">Connexion</a></li>
+          <li><a href="" class="header-nav__items__right__part__link">Mon compte</a></li>
+          <li><a href="" class="header-nav__items__right__part__link">Deconnexion</a></li>
+        </ul>
+        <!--burger-->
+        <a href="#" class="ui-button open-menu header-nav__items__right__part" >
+            <i class="fa fa-bars" aria-hidden="true"></i>
+        </a>
+        <!--/burger-->
+      </div>
+      <!--/items_links-->
+    </nav>
+  </header>
+  <!--/HEADER-->
+<!--lol test-->
+  <!--MAIN-->
+  <main class="main">
+            <div class="top">
+                <img src="images/logo-fond-transparent.png" alt="" class="top__background">
+            </div>
+
+    <div class="main-items">
+      <form action="" methode="post" enctype="multipart/form-data" class="user-informations">
+        <input type="hidden" name="action" value="submit_inscription"/>
+          <div class="user-informations__email">
+              <label for="" >Nom</label> 
+                <input type="text" name="user__lastname" class="user-informations__email__input">
+              </div>
+              <div class="user-informations__email">
+                <label for=""> Prénom</label> 
+                  <input type="text"  name="user__name" class="user-informations__email__input">
+              </div>
+              <div class="user-informations__email">
+                <label for=""> Email</label> 
+                  <input type="text" name="user__email"  class="user-informations__email__input">
+              </div>
+
+              <div class="user-informations__password">
+                <label for="user-informations__password__input" >Mot de passe</label>  
+                  <input type="text" name="user__password" class="user-informations__password__input">
+              </div>
+              
+              <div class="user-informations__confirmPassword">
+                <label for="user-informations__confirmPassword__input">Confirmation du mot de passe</label>  
+                  <input type="text" name="user__confirm__password" class="user-informations__confirmPassword__input">
+              </div>
+
+              <div class="user-informations__cgu">
+                  <input type="checkbox" name="user__cgu" class="user-informations__cgu__input"> J'accepte les règles d'utilisation du site 
+              </div>
+
+              <div class="user-informations__newsletter">
+                  <input type="checkbox" name="user__newsletter" class="user-informations__newsletter__input"> Je m'abonne à la Newsletter 
+              </div>
+              
+              <div class="user-informations__signup">
+                 <input type="submit" value="Je m'inscris" class="user-informations__signup__submit"/>
+
+              </div> 
+
+            </form>
+    </div>
+ 
+  </main>
+  <!--/MAIN-->
+  
+  <!--FOOTER-->
+  <footer class="footer">
+    <!--newsletter-->
+    <div class="footer-wrapper">
+      <form class="footer-newsletter">
+        <div class="footer-newsletter-wrapper">
+          <h5 class="footer-newsletter__title">S'inscrire à la newsletter</h5>
+          <div class="footer-newsletter__fields">
+            <input type="text" class="footer-newsletter__fields__field" placeholder="Email">
+          </div>
+            <button class="footer-newsletter__submit" type="submit">Envoyer</button>
+        </div>
+      </form>
+      <!--/newsletter-->
+      <div class="footer-archives">
+        <ul class="footer-archives__list">
+          <li><a href="" class="footer-archives__list__link">Contact</a></li>
+          <li><a href="" class="footer-archives__list__link">Equipe</a></li>
+          <li><a href="" class="footer-archives__list__link">Accueil</a></li>
+          <li><a href="" class="footer-archives__list__link">Mentions légales</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-copyrights">Copyright @2020</div> 
+   
+  </footer>
+  <!--/FOOTER-->
+</div>
+  <script src="js/app.js"></script>
+</body>
+</html>
+  

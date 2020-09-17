@@ -1,0 +1,41 @@
+.legal-mentions {
+    text-align: center;
+    margin: 10% 0;
+
+    &-wrap {
+        background-color: $color-white;
+        border-top: solid 1rem $color-orange;
+        border-bottom: solid 1rem $color-orange;
+
+        &__border {
+            padding-top: 8%;
+            padding-bottom: 8%;
+            
+
+            &__content {
+                h1,
+                h2,
+                h3,
+                h4,
+                h5,
+                h6 {
+                    color: #4c4c4c;
+                }
+            }
+        }
+    }
+
+    @media (min-width : $breakpoint-large) {
+        margin: 5% 0;
+
+        &-wrap {
+        background-color: $color-orange;
+        border: none;
+
+            &__border {
+                border: 1px solid $color-orange;
+                background-color: $color-white;
+            }
+        }
+    }
+}

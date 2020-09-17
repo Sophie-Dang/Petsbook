@@ -1,0 +1,187 @@
+
+// Homepage
+.main-timelines__item__img {
+    width: 15rem;
+    height: 15rem;
+
+    object-fit: cover;
+    object-position: center;
+
+    border-radius: 50%;
+
+    margin-bottom: 3%;
+
+    @media (min-width: $breakpoint-large) {
+        width: 22rem;
+        height: 22rem;
+    }
+}
+
+// Health Book
+.photos_profiles{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color: $color-white;
+    
+    .human__profiles_elements{
+        width: 100%;
+        background-color:$color-blue;
+        border-radius: 0 0 0% 90% / 5% 10%;
+
+        height:35rem;
+        padding-top: 10%;
+
+        text-align: center;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        .human__profiles{          
+            width: 18rem;
+            height: 18rem;
+
+            &__image{
+                border-radius :50%;
+                width: 100%;
+                height: 100%;
+
+                object-fit: cover;
+                object-position: center;
+
+                margin-top: auto;
+                margin-bottom: auto;
+                padding:1%;
+            }
+
+            &__name{
+                margin-top: 1rem;
+                margin-bottom: 0;
+
+                text-align: center;
+                font-size: 2rem;
+                color:white;
+
+                font-size: $font-size-title-m;
+            }
+        }
+
+        @media (min-width: $breakpoint-large) {
+            padding-top: 4rem;
+            height: 40rem;
+
+            .human__profiles {
+                width: 25rem;
+                height: 25rem;
+
+                &__image {
+                    width: 100%;
+                    height: 100%;
+
+                    margin-bottom: .2rem;
+                }
+
+                &__name {
+                    font-size: $font-size-title-l;
+                }
+            }
+        }
+    }
+
+    .animals__profiles{
+        display: flex;
+        flex-wrap:wrap;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding:5%;
+
+        &__all__wrapper{
+            text-align: center;
+            
+            .animals__profiles__all__wrapper__image{  
+                border-radius :50%;
+
+                width: 8rem;
+                height: 8rem;
+
+                object-fit: cover;
+                object-position: center;    
+            }
+
+            .animals__profiles__all__wrapper__name{
+                color:darken($color-grey, 60);
+                margin-top: 0.6rem;
+                text-align: center;   
+                font-weight: bold;
+            }
+
+
+            i {
+                width: 10rem;
+            }
+            
+            .fa {
+                font-size: 7rem;
+                color: darken($color-white, 15);
+
+                &-icon-add-text {
+                    color: darken($color-white, 20);
+                }
+            }
+        }
+
+        @media (min-width: $breakpoint-large){
+            flex-direction:row;
+            justify-content: space-evenly;
+            align-items: center;
+            
+            width: 70%;
+
+            padding: 0;
+            margin: 3% 0;
+            margin-left: auto;
+            margin-right: auto;
+
+            &__all__wrapper{              
+                text-align: center;
+                
+                .animals__profiles__all__wrapper__image{
+                    padding:.5%;
+                    width: 10rem;
+                    height: 10rem;
+    
+                }
+
+                &:hover {
+                    transform: scale(1.1);
+                    transition: all .2s ease-in-out; 
+                } 
+                
+                i {
+                    width: 10rem;
+                    height: 10rem;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                
+                .fa {
+                    font-size: 8rem;
+                    color: darken($color-white, 15);
+    
+                    &-icon-add-text {
+                        color: darken($color-white, 20);
+                        text-align: center;
+                    }
+                }
+            }           
+        }
+    }   
+}
+
+
+

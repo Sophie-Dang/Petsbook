@@ -1,0 +1,190 @@
+// je mets un style général à ma div entourant mes sections ainsi qu'a toutes mes sections. Les sections seront chacune en position relative, et ainsi les illustrations pourront être placées en position absolues sur mes sections.
+//Ensuite j'applique un style sur chaque div (chaque illustration), le placement sur la page, mais aussi un calcul de la width et height au besoin. Seules les illustrations animées ne peuvent pas encore être adaptées en taille ici, elles le seront dans le JS. 
+#timeline-glimpse__container {
+    position: relative;
+    overflow-x: hidden;
+    width :100vw;
+    /* Return on top */
+    
+}
+.timeline-glimpse {
+    background-color: $color-green;
+    overflow-x: hidden;
+    width: 100vw;
+    &__section {
+        position: relative;
+        height: 700px;
+        &__pic {
+            position: absolute; 
+            max-width: 90%;
+            width: 650px;
+            height: 400px;
+            top: 150px;
+            left: 50%;
+            margin-left: -325px;
+            border-radius: 20px;
+            box-shadow: 0px 0px 67px 10px rgba(0,0,0,0.75);
+            &__calage {
+                position: relative; 
+                width: 100%;
+                height: 100%;
+                .timeline-glimpse__section__date {
+                    position: absolute; 
+                    top: -45px;
+                    right: 0px;
+                    width: 100px;
+                    height: 30px;
+                    line-height: 30px;
+                    border-radius: 20px;
+                    background-color: $color-blue;
+                    opacity: 0.9;
+                    box-shadow: 0px 0px 67px 10px rgba(0,0,0,0.4);
+                    text-align: center;
+                    color: white; 
+                }
+                .timeline-glimpse__section__text {
+                    position: absolute; 
+                    top: calc(100% + 15px);
+                    left: Opx;
+                    width: 100%;
+                    min-height: 10px;
+                    padding: 5px;
+                    border-radius: 20px;
+                    background-color: $color-blue;
+                    opacity: 0.9;
+                    box-shadow: 0px 0px 67px 10px rgba(0,0,0,0.4);
+                    text-align: center;
+                    color: white; 
+                }
+            }    
+            
+        }
+        &__element {
+            position: absolute; 
+        }
+    }
+    #timeline__raccoon {
+        background: url('../assets/images/racoon.png') no-repeat top center;
+        background-size: cover;
+        opacity: 0;
+        animation: raccoon_appear 1s forwards;
+        // animation-delay: 0.5s;
+        width: 70px;
+        height: 111px;
+        position: fixed;
+        top: calc(50% - 55px);
+        left: calc(50% - 35px);
+    }
+    //---------------------------------------------------------------------------------------------------------------------------------
+    //class pour les objets tombant du ciel (en mode non encore apparu)
+    .scroll_fallen_objects {
+        opacity: 0;
+        transform: translate3d(0, -100px, 0);
+        transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out; //ici on joue sur la transition de l'opacity et du transform
+
+    }
+    //class pour les objets tombant du ciel (en mode apparu)
+    .scroll_fallen_objects_animate {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+    //-----------------------------------------------------------------------------------------------------------------------------------
+    //ici c'est pareil qu'au dessus, sauf que les éléments apparaissent d'en dessous. 
+    .timeline-glimpse__section__pic {
+        opacity: 0;
+        transform: translate3d(0, 100px, 0);
+        transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out; 
+
+    }
+    .timeline-glimpse__section__pic_animate {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+    //----------------------------------------------------------------------------------------------------------------------------------------
+    //class pour les éléments de type mare. On veut que les mares apparaissent en grandissant. Comme une goutte d'eau qui se transforment en mare. Dans le fichier js on joue sur addClass et removeClass 
+    .scroll_expand_objects {
+        opacity: 0;
+        transform : scale(0.5, 0.5);
+        transition: all 0.5s ease-in-out; 
+    }
+    .scroll_expand_objects_animate {
+        opacity: 1;
+        transform: scale(1,1);
+    }
+    //---------------------------------------------------------------------------------------------------------------------------------------------------
+    //ici on veut que la porte se ferme après le passage du raccoon. On joue également sur addClass et removeClass dans js. 
+    .scroll_door_open {
+        margin-left: 60px!important;
+        transition: all 0.5s ease-in-out; 
+    }
+    .scroll_door_open_animate {
+        margin-left: -58px!important;
+
+    }
+}
+
+#returnOnTop {
+    background: url('../assets/images/return_on_top3.png') no-repeat;
+    background-size: cover;
+    position: absolute;
+    bottom: 290px;
+    right: 1%;
+    width: 60px;
+    height: 60px ;
+    animation: bounce 2s infinite;
+    cursor: pointer;
+    display: none;
+    filter: brightness(150%);
+    height: 48px;
+    position: fixed;
+    right: 1%;
+    width: 48px;
+}
+#timeline-glimpse__overview {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    .timeline-glimpse__section__intro {
+        background-color: transparent; 
+    }
+}
+
+//on utilise pas de scroll pour l'arrivée du raccoon donc pas besoin de js , on utilise les règles keyframes from --> to pour l'animation puisque le raccoon sera lancé directement au chargement de la page. 
+@keyframes raccoon_appear {
+    from {
+      opacity: 0; 
+      transform: translate3d(0, -100px, 0); 
+    }
+  
+    to {
+        opacity: 1; 
+        transform: translate3d(0, 0, 0);       
+    }
+  }
+  // bouton de retour en haut de page, animation pour rebond
+  @keyframes bounce {
+	0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+	40% {transform: translateY(-30px);}
+	60% {transform: translateY(-15px);}
+}
+
+@media screen and (max-width: 992px) {
+    .timeline-glimpse__section__pic {
+        height: 250px;
+        left: 5%;
+        margin-left: 0;
+    }
+    #timeline-glimpse__container {
+        #returnOnTop {
+            right: -100%;
+        }
+    }
+    .arrow-top-edit-timeline {
+        #returnOnTop {
+            right: -100%;
+        }
+    }    
+    
+}
+  
